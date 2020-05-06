@@ -9,4 +9,5 @@ urlpatterns = [
     #render home page from product app
     path('', views.home, name="home"),
     path('accounts/', include('account.urls')),
+    path('products/', include('product.urls')),
 ]

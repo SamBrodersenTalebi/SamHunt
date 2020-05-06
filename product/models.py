@@ -11,7 +11,7 @@ class Product(models.Model):
   icon = models.ImageField(upload_to='images/')
   body = models.TextField()
   #hunter person who submitted the product
-  hunter = models.ForeignKey(User, on_delete= models.CASCADE)
+  hunter = models.ForeignKey(User, on_delete=models.CASCADE)
 
 def __str__(self):
   return self.title
